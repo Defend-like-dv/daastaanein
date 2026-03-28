@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ════════════════════════════════════
+   DESIGN TOKENS — Light Mode
+════════════════════════════════════ */
+:root {
+  --bg:      #faf8f3;
+  --bg2:     #f3f0e8;
+  --card:    #ffffff;
+  --ink:     #1a1812;
+  --ink2:    #4a4538;
+  --ink3:    #8a8270;
+  --ink4:    #b8b0a0;
+  --accent:  #b5451b;
+  --accent2: #d4872a;
+  --divide:  rgba(26, 24, 18, 0.08);
+  --shadow:  0 2px 24px rgba(26, 24, 18, 0.06);
+  --shadow2: 0 8px 48px rgba(26, 24, 18, 0.10);
+}
+
+/* ════════════════════════════════════
+   DESIGN TOKENS — Dark Mode
+════════════════════════════════════ */
+.dark {
+  --bg:      #131210;
+  --bg2:     #1c1a16;
+  --card:    #1f1d18;
+  --ink:     #ede8d8;
+  --ink2:    #c0b89e;
+  --ink3:    #786e5c;
+  --ink4:    #4a4438;
+  --accent:  #d4662a;
+  --accent2: #c4912a;
+  --divide:  rgba(237, 232, 216, 0.07);
+  --shadow:  0 2px 24px rgba(0, 0, 0, 0.25);
+  --shadow2: 0 8px 48px rgba(0, 0, 0, 0.40);
+}
+
+/* ════════════════════════════════════
+   BASE
+════════════════════════════════════ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-crimson), Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  transition: background 0.35s, color 0.35s;
+  overflow-x: hidden;
+}
+
+/* ════════════════════════════════════
+   TYPOGRAPHY
+════════════════════════════════════ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* ════════════════════════════════════
+   SCROLLBAR
+════════════════════════════════════ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--divide); border-radius: 2px; }
+
+/* ════════════════════════════════════
+   PROSE (story body content)
+════════════════════════════════════ */
+.prose {
+  color: var(--ink2);
+  font-size: 1.08rem;
+  line-height: 1.85;
+  max-width: 680px;
+}
+.prose h2 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+.prose h3 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.prose p {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.prose em {
+  font-style: italic;
+  color: var(--ink);
+}
+.prose strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--ink2);
+}
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--divide);
+  margin: 2.5rem 0;
+}
+.prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ════════════════════════════════════
+   ANIMATIONS
+════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

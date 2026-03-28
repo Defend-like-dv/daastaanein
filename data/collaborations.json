@@ -1,0 +1,347 @@
+{
+  "_note": "This file is the source of truth for the Collaborator Map. It is independent of the CMS stories — edit it to add any collaboration, even songs without a Daastaan. Each song stores the role each person played in THAT song specifically.",
+
+  "artists": {
+    "rd-burman": {
+      "name": "R.D. Burman",
+      "nameHindi": "राहुल देव बर्मन",
+      "knownRoles": ["music-director", "singer"],
+      "activePeriod": "1961–1994"
+    },
+    "sd-burman": {
+      "name": "S.D. Burman",
+      "nameHindi": "सचिन देव बर्मन",
+      "knownRoles": ["music-director", "singer"],
+      "activePeriod": "1937–1975"
+    },
+    "madan-mohan": {
+      "name": "Madan Mohan",
+      "nameHindi": "मदन मोहन",
+      "knownRoles": ["music-director"],
+      "activePeriod": "1950–1975"
+    },
+    "gulzar": {
+      "name": "Gulzar",
+      "nameHindi": "गुलज़ार",
+      "knownRoles": ["lyricist", "director"],
+      "activePeriod": "1963–present"
+    },
+    "shailendra": {
+      "name": "Shailendra",
+      "nameHindi": "शैलेन्द्र",
+      "knownRoles": ["lyricist"],
+      "activePeriod": "1949–1966"
+    },
+    "raja-mehdi-ali-khan": {
+      "name": "Raja Mehdi Ali Khan",
+      "nameHindi": "राजा मेहदी अली खान",
+      "knownRoles": ["lyricist"],
+      "activePeriod": "1945–1966"
+    },
+    "anand-bakshi": {
+      "name": "Anand Bakshi",
+      "nameHindi": "आनंद बख्शी",
+      "knownRoles": ["lyricist"],
+      "activePeriod": "1956–2002"
+    },
+    "kishore-kumar": {
+      "name": "Kishore Kumar",
+      "nameHindi": "किशोर कुमार",
+      "knownRoles": ["singer", "actor", "music-director"],
+      "activePeriod": "1946–1987"
+    },
+    "lata-mangeshkar": {
+      "name": "Lata Mangeshkar",
+      "nameHindi": "लता मंगेशकर",
+      "knownRoles": ["singer"],
+      "activePeriod": "1942–2022"
+    },
+    "asha-bhosle": {
+      "name": "Asha Bhosle",
+      "nameHindi": "आशा भोसले",
+      "knownRoles": ["singer"],
+      "activePeriod": "1943–present"
+    },
+    "mukesh": {
+      "name": "Mukesh",
+      "nameHindi": "मुकेश",
+      "knownRoles": ["singer"],
+      "activePeriod": "1941–1976"
+    },
+    "mohammed-rafi": {
+      "name": "Mohammed Rafi",
+      "nameHindi": "मोहम्मद रफ़ी",
+      "knownRoles": ["singer"],
+      "activePeriod": "1944–1980"
+    }
+  },
+
+  "songs": [
+    {
+      "id": "lag-ja-gale-1964",
+      "title": "Lag Ja Gale",
+      "titleHindi": "लग जा गले",
+      "film": "Woh Kaun Thi",
+      "year": 1964,
+      "contributors": [
+        { "artistId": "madan-mohan",         "role": "music-director" },
+        { "artistId": "raja-mehdi-ali-khan", "role": "lyricist" },
+        { "artistId": "lata-mangeshkar",     "role": "singer" }
+      ],
+      "hasDaastaan": true,
+      "daastaanSlug": "story-behind-lag-ja-gale"
+    },
+    {
+      "id": "aaja-sanam-madhur-chandni-1964",
+      "title": "Aaja Sanam Madhur Chandni Mein Ham",
+      "titleHindi": "आजा सनम मधुर चाँदनी में हम",
+      "film": "Chori Chori",
+      "year": 1956,
+      "contributors": [
+        { "artistId": "sd-burman",       "role": "music-director" },
+        { "artistId": "shailendra",      "role": "lyricist" },
+        { "artistId": "lata-mangeshkar","role": "singer" },
+        { "artistId": "mukesh",          "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "tere-bina-zindagi-aandhi-1975",
+      "title": "Tere Bina Zindagi Se Koi",
+      "titleHindi": "तेरे बिना ज़िंदगी से कोई",
+      "film": "Aandhi",
+      "year": 1975,
+      "contributors": [
+        { "artistId": "rd-burman",       "role": "music-director" },
+        { "artistId": "gulzar",          "role": "lyricist" },
+        { "artistId": "kishore-kumar",   "role": "singer" },
+        { "artistId": "lata-mangeshkar","role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "dum-maro-dum-1971",
+      "title": "Dum Maro Dum",
+      "titleHindi": "दम मारो दम",
+      "film": "Hare Rama Hare Krishna",
+      "year": 1971,
+      "contributors": [
+        { "artistId": "rd-burman",   "role": "music-director" },
+        { "artistId": "anand-bakshi","role": "lyricist" },
+        { "artistId": "asha-bhosle", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "roop-tera-mastana-1969",
+      "title": "Roop Tera Mastana",
+      "titleHindi": "रूप तेरा मस्ताना",
+      "film": "Aradhana",
+      "year": 1969,
+      "contributors": [
+        { "artistId": "sd-burman",     "role": "music-director" },
+        { "artistId": "shailendra",    "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "mere-sapno-ki-rani-1969",
+      "title": "Mere Sapno Ki Rani",
+      "titleHindi": "मेरे सपनों की रानी",
+      "film": "Aradhana",
+      "year": 1969,
+      "contributors": [
+        { "artistId": "sd-burman",     "role": "music-director" },
+        { "artistId": "shailendra",    "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "musafir-hoon-yaaron-1974",
+      "title": "Musafir Hoon Yaaron",
+      "titleHindi": "मुसाफिर हूँ यारों",
+      "film": "Parichay",
+      "year": 1974,
+      "contributors": [
+        { "artistId": "rd-burman",     "role": "music-director" },
+        { "artistId": "gulzar",        "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "naam-gum-jayega-1977",
+      "title": "Naam Gum Jayega",
+      "titleHindi": "नाम गुम जाएगा",
+      "film": "Kinara",
+      "year": 1977,
+      "contributors": [
+        { "artistId": "rd-burman",       "role": "music-director" },
+        { "artistId": "gulzar",          "role": "lyricist" },
+        { "artistId": "lata-mangeshkar","role": "singer" },
+        { "artistId": "kishore-kumar",   "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "mera-jeevan-kora-kagaz-1974",
+      "title": "Mera Jeevan Kora Kagaz",
+      "titleHindi": "मेरा जीवन कोरा कागज़",
+      "film": "Kora Kagaz",
+      "year": 1974,
+      "contributors": [
+        { "artistId": "rd-burman",     "role": "music-director" },
+        { "artistId": "anand-bakshi",  "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "teri-bindiya-re-1971",
+      "title": "Teri Bindiya Re",
+      "titleHindi": "तेरी बिंदिया रे",
+      "film": "Abhimaan",
+      "year": 1973,
+      "contributors": [
+        { "artistId": "sd-burman",       "role": "music-director" },
+        { "artistId": "shailendra",      "role": "lyricist" },
+        { "artistId": "lata-mangeshkar","role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "pyar-hamen-kis-mod-pe-1981",
+      "title": "Pyar Hamein Kis Mod Pe Le Aaya",
+      "titleHindi": "प्यार हमें किस मोड़ पे ले आया",
+      "film": "Satte Pe Satta",
+      "year": 1982,
+      "contributors": [
+        { "artistId": "rd-burman",     "role": "music-director" },
+        { "artistId": "gulzar",        "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" },
+        { "artistId": "asha-bhosle",   "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "dil-padosi-hai-1986",
+      "title": "Dil Padosi Hai",
+      "titleHindi": "दिल पड़ोसी है",
+      "film": "Ijaazat",
+      "year": 1987,
+      "contributors": [
+        { "artistId": "rd-burman",   "role": "music-director" },
+        { "artistId": "gulzar",      "role": "lyricist" },
+        { "artistId": "asha-bhosle", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "mera-kuch-saaman-1987",
+      "title": "Mera Kuch Saaman",
+      "titleHindi": "मेरा कुछ सामान",
+      "film": "Ijaazat",
+      "year": 1987,
+      "contributors": [
+        { "artistId": "rd-burman",   "role": "music-director" },
+        { "artistId": "gulzar",      "role": "lyricist" },
+        { "artistId": "asha-bhosle", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "yeh-shaam-mastani-1971",
+      "title": "Yeh Shaam Mastani",
+      "titleHindi": "यह शाम मस्तानी",
+      "film": "Kati Patang",
+      "year": 1971,
+      "contributors": [
+        { "artistId": "rd-burman",     "role": "music-director" },
+        { "artistId": "anand-bakshi",  "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "piya-tose-naina-lage-re-1965",
+      "title": "Piya Tose Naina Lage Re",
+      "titleHindi": "पिया तोसे नैना लागे रे",
+      "film": "Guide",
+      "year": 1965,
+      "contributors": [
+        { "artistId": "sd-burman",       "role": "music-director" },
+        { "artistId": "shailendra",      "role": "lyricist" },
+        { "artistId": "lata-mangeshkar","role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "aane-wala-pal-1978",
+      "title": "Aane Wala Pal",
+      "titleHindi": "आने वाला पल",
+      "film": "Golmaal",
+      "year": 1979,
+      "contributors": [
+        { "artistId": "rd-burman",     "role": "music-director" },
+        { "artistId": "gulzar",        "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "yeh-dil-na-hota-bechara-1969",
+      "title": "Yeh Dil Na Hota Bechara",
+      "titleHindi": "यह दिल ना होता बेचारा",
+      "film": "Jewel Thief",
+      "year": 1967,
+      "contributors": [
+        { "artistId": "sd-burman",    "role": "music-director" },
+        { "artistId": "shailendra",   "role": "lyricist" },
+        { "artistId": "kishore-kumar","role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "raina-beeti-jaye-1974",
+      "title": "Raina Beeti Jaye",
+      "titleHindi": "रैना बीती जाए",
+      "film": "Amar Prem",
+      "year": 1972,
+      "contributors": [
+        { "artistId": "rd-burman",       "role": "music-director" },
+        { "artistId": "anand-bakshi",    "role": "lyricist" },
+        { "artistId": "lata-mangeshkar","role": "singer" },
+        { "artistId": "kishore-kumar",   "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "kuch-toh-log-kahenge-1972",
+      "title": "Kuch Toh Log Kahenge",
+      "titleHindi": "कुछ तो लोग कहेंगे",
+      "film": "Amar Prem",
+      "year": 1972,
+      "contributors": [
+        { "artistId": "rd-burman",     "role": "music-director" },
+        { "artistId": "anand-bakshi",  "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    },
+    {
+      "id": "zindagi-ek-safar-hai-suhana-1971",
+      "title": "Zindagi Ek Safar Hai Suhana",
+      "titleHindi": "ज़िंदगी एक सफ़र है सुहाना",
+      "film": "Andaz",
+      "year": 1971,
+      "contributors": [
+        { "artistId": "rd-burman",     "role": "music-director" },
+        { "artistId": "anand-bakshi",  "role": "lyricist" },
+        { "artistId": "kishore-kumar", "role": "singer" }
+      ],
+      "hasDaastaan": false
+    }
+  ]
+}
