@@ -22,18 +22,11 @@ export default function StoryCard({ story, large = false }: StoryCardProps) {
   return (
     <Link
       href={`/story/${story.slug}`}
-      className={`flex flex-col rounded-xl p-8 transition-shadow group no-underline ${large ? 'row-span-2' : ''}`}
+      className={`story-card flex flex-col rounded-xl p-8 group no-underline ${large ? 'row-span-2' : ''}`}
       style={{
         background: 'var(--card)',
-        boxShadow: 'var(--shadow)',
         border: '1px solid var(--divide)',
       }}
-      onMouseEnter={(e) =>
-        ((e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow2)')
-      }
-      onMouseLeave={(e) =>
-        ((e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow)')
-      }
     >
       {/* Era + Year */}
       {(eraLabel || story.year) && (

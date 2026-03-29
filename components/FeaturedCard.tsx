@@ -54,14 +54,7 @@ export default function FeaturedCard({ story }: { story: Story }) {
       {/* Title */}
       <Link
         href={`/story/${story.slug}`}
-        className="font-display text-[1.6rem] font-bold leading-[1.2] tracking-[-0.015em] block mb-2 transition-colors no-underline"
-        style={{ color: 'var(--ink)' }}
-        onMouseEnter={(e) =>
-          ((e.currentTarget as HTMLElement).style.color = 'var(--accent)')
-        }
-        onMouseLeave={(e) =>
-          ((e.currentTarget as HTMLElement).style.color = 'var(--ink)')
-        }
+        className="font-display text-[1.6rem] font-bold leading-[1.2] tracking-[-0.015em] block mb-2 transition-colors no-underline text-ink hover:text-accent"
       >
         {story.title}
       </Link>

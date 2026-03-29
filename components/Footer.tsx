@@ -3,13 +3,13 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer
-      className="mt-24 py-12 px-[60px]"
+      className="mt-16 md:mt-24 py-10 md:py-12 px-6 md:px-[60px]"
       style={{
         background: 'var(--bg2)',
         borderTop: '1px solid var(--divide)',
       }}
     >
-      <div className="max-w-[1300px] mx-auto flex items-center justify-between gap-8 flex-wrap">
+      <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         {/* Brand */}
         <div>
           <Link
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Links */}
-        <nav className="flex gap-8">
+        <nav className="flex flex-wrap gap-6 md:gap-8">
           {[
             { href: '/stories', label: 'Stories' },
             { href: '/about',   label: 'How We Work' },
@@ -38,10 +38,7 @@ export default function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-[0.72rem] tracking-[.08em] uppercase transition-colors"
-              style={{ color: 'var(--ink3)' }}
-              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = 'var(--ink)')}
-              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = 'var(--ink3)')}
+              className="font-sans text-[0.72rem] tracking-[.08em] uppercase transition-colors text-ink3 hover:text-ink"
             >
               {link.label}
             </Link>
